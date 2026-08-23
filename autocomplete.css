@@ -1,0 +1,81 @@
+/* LeetCode Java Autocomplete Dropdown */
+
+#lc-java-autocomplete {
+  position: fixed;
+  z-index: 999999;
+  width: 320px;
+  max-height: 340px;
+  overflow-y: auto;
+  background: #1e1e1e;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+  font-size: 13px;
+  padding: 4px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+#lc-java-autocomplete::-webkit-scrollbar {
+  width: 6px;
+}
+#lc-java-autocomplete::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+.lc-ac-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 28px;
+  box-sizing: border-box;
+  transition: background 0.07s;
+}
+
+.lc-ac-item:hover,
+.lc-ac-item.lc-ac-selected {
+  background: #094771;
+}
+
+.lc-ac-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  letter-spacing: 0;
+}
+
+.lc-ac-icon-keyword  { background: #569cd6; color: #1e1e1e; }
+.lc-ac-icon-type     { background: #4ec9b0; color: #1e1e1e; }
+.lc-ac-icon-method   { background: #dcdcaa; color: #1e1e1e; }
+.lc-ac-icon-snippet  { background: #c586c0; color: #fff; }
+.lc-ac-icon-variable { background: #9cdcfe; color: #1e1e1e; }
+
+.lc-ac-label {
+  color: #d4d4d4;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lc-ac-item.lc-ac-selected .lc-ac-label {
+  color: #ffffff;
+}
+
+.lc-ac-detail {
+  color: #6a9955;
+  font-size: 11px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
