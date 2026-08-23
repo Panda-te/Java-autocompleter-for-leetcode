@@ -8,9 +8,11 @@ The goal is to let you focus on the **solution logic** instead of repeatedly wri
 
 
 ## 🚀 Installation
- ## just download it in zip and extract.
- ## now just go to extensions and load unpack the extension 
- ## you are set 
+ ## Step1 -  
+ Download it in zip and extract.
+ ## Step2 -
+ Just go to extensions and load unpack the extension.
+ you are set 
 
 ## 🎯 Motivation
 
